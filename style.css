@@ -1,0 +1,152 @@
+
+@font-face {
+	font-family: 'Cormorant-Garamond-Light';
+	src: url('./assets/fonts/CormorantGaramond-Light.otf');
+}
+@font-face {
+	font-family: 'BuongiornoRastellinoCyrScript';
+	src: url('./assets/fonts/BuongiornoRastellinoCyrScript.ttf');
+}
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 3.5vw;
+	overflow-x: hidden;
+}
+header{
+	display: flex;
+	background-image: url('./assets/1.png');
+	background-color: black;
+	background-size: cover;
+	width: 100vw;
+	overflow: hidden;
+	height: 66vw;
+	justify-content: center;
+	align-items: center;
+}
+.wrapper{
+	margin: 0;
+	font-family: 'Cormorant-Garamond-Light';
+	color: #a67c52;
+	font-size: 2.5vw;
+}
+
+.newlyweds{
+margin-left: 3.6vw;
+font-size: 4vw;
+padding: 10.8vw 15.3vw 10.8vw 16.7vw;
+border: 2px solid #a67c52;
+}
+
+.place{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-image: url('./assets/2.png');
+	background-color: black;
+	background-size: cover;
+	width: 100vw;
+	overflow: hidden;
+	height: 66vw;
+	padding-top: 6vw;
+	padding-bottom: 5.16vw;
+	padding-left: 1.86vw;
+	position: relative;
+}
+.invition{
+	font-size: 2.5vw;
+	text-align: center;
+
+}
+.date{
+	width: 21.17vw;
+	height: auto;
+}
+.adress{
+	text-align: center;
+	font-size: 2.08vw;
+}
+.time{
+	font-size: 4.16vw;
+}
+.flower{
+	width: 13.08vw;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+h2{
+	font-family: BuongiornoRastellinoCyrScript;
+	font-size: 12vw;
+	margin: 0;
+	font-weight: 100;
+}
+h3{
+	letter-spacing: 14px;
+	text-transform: capitalize;
+	font-size: 2.2vw;
+	font-weight: 100;
+}
+.hints-and-wishes{
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+	align-items: center;
+	background-color: white;
+	background-size: cover;
+	width: 100vw;
+	height: 48.3vw;
+	padding-top: 2.8vw;
+	padding-bottom: 2.5vw;
+	position: relative;
+}
+.hint-container{
+display: flex;
+justify-content: center;
+gap: 3vw;
+}
+.presents{
+	text-align: end;
+	text-transform: uppercase; 
+	font-size: 1.25vw;
+	padding-left: 9vw;
+	letter-spacing: 1.3px;
+}
+.wishes{
+	padding-top: 10vw;
+	text-align: start;
+	text-transform: uppercase; 
+	font-size: 1.25vw;
+	letter-spacing: 1.3px;
+	font-weight: 100;
+}
+footer{
+	width: 100vw;
+	height: 13.33vw;
+	background-color: black;
+	background-size: cover;
+	position: relative;
+}
+.flowerFoot{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 35.25vw;
+	height: 35.25vw;
+}
+.flowerUp{
+	position: absolute;
+	top: -2px;
+	right: 0;
+	width: 21.16vw;
+	height: 26.15vw;
+}
+p{margin: 0;
+	margin-top: 5.5vw;
+	font-size: 1.7vw;
+}
+.gorko{
+	margin-left: 2.8vw;
+}
