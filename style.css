@@ -7,20 +7,23 @@
 	font-family: 'BuongiornoRastellinoCyrScript';
 	src: url('./assets/fonts/BuongiornoRastellinoCyrScript.ttf');
 }
+*{
+	box-sizing: border-box;
+}
 body{
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 	font-size: 3.5vw;
 	overflow-x: hidden;
 }
 header{
+	position: relative;
 	display: flex;
-	background-image: url('./assets/1.png');
 	background-color: black;
 	background-size: cover;
 	width: 100vw;
 	overflow: hidden;
+	min-height: 810px;
 	height: 66vw;
 	justify-content: center;
 	align-items: center;
@@ -28,41 +31,91 @@ header{
 .wrapper{
 	margin: 0;
 	font-family: 'Cormorant-Garamond-Light';
-	color: #a67c52;
+	color: #A67C52;
 	font-size: 2.5vw;
 }
+header .start-left{
+	top: 0;
+	left: 0;
+	width: 48vw;
+	height: 60vw;
+	min-width: 336px;
+	min-height: 420px;
+
+}
+header .start-right{
+	bottom: 0;
+	right: 0;
+	width: 72vw;
+	height: 72vw;
+}
+
+header .start-left-mv{
+	bottom: 10px;
+	left: -10px;
+	min-height: 270px;
+	min-width: 140px;
+	display: none;
+}
+body .start-right-mv{
+	top: 550px;
+	right: -10px;
+	min-height: 465px;
+	min-width: 276px;
+	z-index: 1000000;
+	display: none;
+}
+
+
+
 
 .newlyweds{
+position: relative;
+z-index: 1000;
 margin-left: 3.6vw;
 font-size: 4vw;
 padding: 10.8vw 15.3vw 10.8vw 16.7vw;
 border: 2px solid #a67c52;
 }
 
+
 .place{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	background-image: url('./assets/2.png');
 	background-color: black;
 	background-size: cover;
 	width: 100vw;
 	overflow: hidden;
+	min-height: 810px;
 	height: 66vw;
 	padding-top: 6vw;
 	padding-bottom: 5.16vw;
 	padding-left: 1.86vw;
 	position: relative;
 }
+.place .inition-right{
+	left: -5px;
+	bottom: -10px;
+	width: 45vw;
+}
+.place .inition-right-mv{
+	left: -5px;
+	bottom: 0;
+	width: 150px;
+	display: none;
+}
 .invition{
 	font-size: 2.5vw;
 	text-align: center;
 
 }
+
 .date{
 	width: 21.17vw;
 	height: auto;
+	min-width: 100px;
 }
 .adress{
 	text-align: center;
@@ -84,7 +137,7 @@ h2{
 	font-weight: 100;
 }
 h3{
-	letter-spacing: 14px;
+	letter-spacing: 1.16vw;
 	text-transform: capitalize;
 	font-size: 2.2vw;
 	font-weight: 100;
@@ -92,12 +145,12 @@ h3{
 .hints-and-wishes{
 	display: flex;
 	flex-direction: column;
-	/* justify-content: space-between; */
 	align-items: center;
 	background-color: white;
 	background-size: cover;
 	width: 100vw;
 	height: 48.3vw;
+	min-height: 680px;
 	padding-top: 2.8vw;
 	padding-bottom: 2.5vw;
 	position: relative;
@@ -125,6 +178,7 @@ gap: 3vw;
 footer{
 	width: 100vw;
 	height: 13.33vw;
+	min-height: 130px;
 	background-color: black;
 	background-size: cover;
 	position: relative;
@@ -149,4 +203,47 @@ p{margin: 0;
 }
 .gorko{
 	margin-left: 2.8vw;
+}
+@media (max-width:750px){
+	header .start-right{
+	display: none;
+	}
+
+	header .start-left {
+		z-index: 10000;
+	}
+	header .start-left-mv{
+		display: block;
+	}
+	body .start-right-mv{
+		display: block;
+	}
+	.place{
+		padding-top:212px;
+		padding-bottom: 200px;
+	}
+	.invition{
+		font-size : 17px;
+  	line-height : 17px;
+  	color : #A67C52;
+	}
+	.adress{
+		font-size : 15px;
+  	line-height : 15px;
+	}
+
+	.place .inition-right{
+		display: none;
+	}
+	.place .inition-right-mv{
+		display: block;
+	}
+	.mob{
+		font-size : 18px;
+		line-height : 25px;
+	}
+	.time{
+		font-size : 30px;
+  	line-height : 25px;
+	}
 }
