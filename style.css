@@ -235,8 +235,10 @@ footer{
 	position: relative;
 }
 .help{
-	padding-top: 2vw;
+	margin: 0 auto;
+	width: 50vw;
 	text-align: center;
+	padding-top: 2vw;
 	font-size: 1.5vw;
 	line-height: 1;
 	z-index: 100000;
@@ -247,7 +249,7 @@ footer{
 	font-size: 2.17vw;
 	padding-bottom: 1vw;
 }
-@media (max-width:700px){
+@media (max-width:600px){
 	header .start-right{
 	display: none;
 	}
@@ -334,13 +336,15 @@ footer{
 		display: block;
 	}
 	.help{
-		font-size: 12px;
+		padding-top: 20px;
+		font-size: 8px;
+		width: 57vw;
 	}
 	.koordinator-tel{
 		font-size: 15px;
+		padding-bottom: 20px;
 	}
 	.flowerFoot{
 		left: -2vw;
-		bottom: -15px;
 	}
 }
